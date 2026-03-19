@@ -1,0 +1,59 @@
+{
+	"name": "claude-code-acp-sdk",
+	"version": "0.1.0",
+	"description": "Programmatic TypeScript SDK for Claude Code — streaming, multi-turn sessions, and permission control via ACP",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist",
+		"LICENSE",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"lint": "tsc --noEmit",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"claude",
+		"claude-code",
+		"anthropic",
+		"acp",
+		"agent-client-protocol",
+		"ai",
+		"agent",
+		"sdk",
+		"llm",
+		"coding-agent"
+	],
+	"author": "Finnegan1",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Finnegan1/claude-code-acp-sdk.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Finnegan1/claude-code-acp-sdk/issues"
+	},
+	"homepage": "https://github.com/Finnegan1/claude-code-acp-sdk#readme",
+	"engines": {
+		"node": ">=18"
+	},
+	"sideEffects": false,
+	"dependencies": {
+		"@agentclientprotocol/sdk": "^0.16.1",
+		"@zed-industries/claude-agent-acp": "^0.22.2"
+	},
+	"devDependencies": {
+		"@types/node": "^25.5.0",
+		"typescript": "^5.9.3"
+	}
+}
